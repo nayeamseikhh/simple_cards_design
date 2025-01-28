@@ -26,6 +26,18 @@ body{
     /* opacity: 0.2; */
 
 }
+.about_cards::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 140px;
+    background: url(./cards-bg02.svg);
+    border-top-right-radius: 12px;
+    /* opacity: 0.2; */
+
+}
 .about_content{
     width: 97%;
     height: 440px;
@@ -36,9 +48,18 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
 }
 .about_cards:hover{
     background-color: green;
     cursor: pointer;
     transform: translateY(-10px);
+    color: white;
 }
+.about_cards:hover::after {
+    opacity: 0.2;
+}
+.about_cards:hover::before {
+    opacity: 0.2;
+}
+
